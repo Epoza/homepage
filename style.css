@@ -66,3 +66,67 @@ header {
   text-align: right;
 } for bigger screens */
 
+
+/* ------------------------ Main ----------------------- */
+
+.project-container {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Default: 1 column */
+.project-container {
+  grid-template-columns: 1fr;
+}
+
+/* Medium screens: 2 columns */
+@media (min-width: 600px) {
+  .project-container {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Large screens: 3 columns, max 2 rows */
+@media (min-width: 900px) {
+  .project-container {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, auto);
+  }
+}
+
+.project {
+  border: 1px solid #000000;
+  overflow: hidden;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+}
+
+.project-info {
+  padding: 10px;
+}
+
+.project-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 5%;
+}
+
+.project-icons {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.project-text {
+  padding: 0px 5%;
+}
+
+/* Change this later */
+i {
+  font-size: 20px; 
+}
+
