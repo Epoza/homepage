@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Copse&display=swap');
 
 * {
   font-family: 'Inter', sans-serif, monospace;
@@ -23,18 +23,13 @@ h1 {
   padding: 10px 0px;
 }
 /* --------------- Header -------------------- */
-header {
-  /* display: flex;  add in for bigger screens*/
-  /* padding: 50px; add in for bigger screens*/
-}
-
 
 .image-text {
   position: absolute;
   bottom: 5px;
   left: 5px;
   color: whitesmoke;
-  
+  font-family: Copse, 'Inter', sans-serif, monospace;
   font-size: 30px;
   font-weight: 800;
 }
@@ -42,7 +37,6 @@ header {
 .header-image {
   border: 1px solid red;
   position: relative;
-
   margin: 10px;
 }
 
@@ -61,10 +55,38 @@ header {
   margin: 0px 5px;
 }
 
+@media (min-width: 600px) {
+  header {
+    display: block;
+    padding: 50px;
+  }
 
-/* .header-text>.icons {
-  text-align: right;
-} for bigger screens */
+  .header-image {
+    float: left;
+  }
+
+  .header-image img {
+    width: 350px;
+    height: auto
+  }
+
+  .image-text {
+    left: 300px;
+    top: 55px;
+    width: 100%;
+  }
+
+  .header-text {
+    margin: 100px 0 0 70px;
+    padding-top: 20px;
+    box-shadow: 2.0px 4.0px 4.0px hsl(0deg 0% 0% / 0.44);
+  }
+
+  .header-text>.icons {
+    text-align: right;
+    margin: 10px;
+  } 
+}
 
 
 /* ------------------------ Main ----------------------- */
