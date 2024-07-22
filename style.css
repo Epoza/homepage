@@ -66,18 +66,19 @@ h1 {
   }
 
   .header-image img {
-    width: 350px;
-    height: auto
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
   }
 
   .image-text {
-    left: 300px;
-    top: 55px;
+    left: 25vw;
+    top: 20px;
     width: 100%;
   }
 
   .header-text {
-    margin: 100px 0 0 70px;
+    margin: 70px 0 0 80px;
     padding-top: 20px;
     box-shadow: 2.0px 4.0px 4.0px hsl(0deg 0% 0% / 0.44);
   }
