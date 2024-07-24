@@ -29,6 +29,9 @@ h1 {
   }
 }
 /* --------------- Header -------------------- */
+header {
+  background: linear-gradient(90deg, rgba(214,206,181,1) 23%, rgba(126,126,113,0.4948179955575981) 50%, rgba(174,176,151,1) 83%);
+}
 
 .image-text {
   position: absolute;
@@ -41,13 +44,12 @@ h1 {
 }
 
 .header-image {
-  border: 1px solid red;
   position: relative;
   margin: 10px;
 }
 
 .header-text {
-  border: 1px solid blue;
+  border: 1px solid black;
   background-color: lightgray;
   text-align: center;
 }
@@ -139,6 +141,11 @@ h1 {
 
 main {
   padding: 50px 20px;
+  background: linear-gradient(0deg, rgba(255,209,154,1) 13%, rgba(255,215,172,0.9850140739889706) 38%, rgba(255,232,184,1) 61%, rgba(240,204,128,1) 100%);
+}
+
+.project {
+  background: radial-gradient(circle, rgba(255,210,121,1) 56%, rgba(233,191,148,1) 100%);
 }
 
 .project-container {
@@ -202,6 +209,9 @@ i {
 }
 
 /* --------------------------- Footer -------------------------- */
+footer {
+  background: linear-gradient(90deg, rgba(255,189,116,0.6656863428965336) 0%, rgba(255,35,35,0.6600841020001751) 50%, rgba(255,149,0,0.7021009087228641) 100%);
+}
 
 
 .footer-text {
