@@ -22,6 +22,12 @@ h1 {
   text-align: center;
   padding: 10px 0px;
 }
+
+@media (min-width: 600px) {
+  h1 {
+    text-align: left;
+  }
+}
 /* --------------- Header -------------------- */
 
 .image-text {
@@ -55,7 +61,7 @@ h1 {
   margin: 0px 5px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px){
   header {
     display: block;
     padding: 50px;
@@ -83,10 +89,49 @@ h1 {
     box-shadow: 2.0px 4.0px 4.0px hsl(0deg 0% 0% / 0.44);
   }
 
+  .header-text h1 {
+    text-align: center;
+  }
+
   .header-text>.icons {
     text-align: right;
     margin: 10px;
   } 
+}
+
+@media (min-width: 1060px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-image {
+    float: none;
+    margin: 0;
+  }
+
+  .header-image img {
+    height: auto;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .image-text {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+
+  .header-text h1 {
+    text-align: left;
+  }
+
+  .header-text {
+    margin: 5% 0 5% 0;
+    padding: 10px;
+    max-width: 600px;
+  }
 }
 
 
@@ -114,7 +159,7 @@ main {
 }
 
 /* Large screens: 3 columns, max 2 rows */
-@media (min-width: 900px) {
+@media (min-width: 1060px) {
   .project-container {
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(2, auto);
@@ -185,7 +230,6 @@ i {
   }
 
   .contact-header {
-    text-align: left;
     padding-left: 20px;
   }
 
@@ -202,5 +246,15 @@ i {
 
   .contact-icons {
     margin: 0;
+  }
+}
+
+@media (min-width: 1060px) {
+  footer {
+    padding: 50px;
+  }
+
+  .footer-image img {
+    max-width:500px;
   }
 }
